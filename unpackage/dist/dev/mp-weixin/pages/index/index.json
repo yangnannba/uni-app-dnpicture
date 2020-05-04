@@ -1,9 +1,0 @@
-{
-  "navigationBarTitleText": "懂你找图",
-  "usingComponents": {
-    "uni-segmented-control": "/components/uni-segmented-control/uni-segmented-control",
-    "index-tuijian": "/pages/index/index-tuijian",
-    "index-fenlei": "/pages/index/index-fenlei",
-    "index-zhuanji": "/pages/index/index-zhuanji"
-  }
-}

@@ -1,1 +1,0 @@
-<view class="my"><view class="info-wrap"><image src="{{avatarUrl}}"></image><view>{{nickName}}</view></view></view>

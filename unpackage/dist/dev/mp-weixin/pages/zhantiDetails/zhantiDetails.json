@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "详情页",
-  "usingComponents": {
-    "to-img": "/components/toImg"
-  }
-}
