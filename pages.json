@@ -1,32 +1,41 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
 		{
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "懂你找图"
 			}
 		}
-	    ,{
-            "path" : "pages/search/search",
-            "style" : {}
-        }
         ,{
             "path" : "pages/mine/mine",
             "style" : {}
-        }
-        ,{
-            "path" : "pages/video/video",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/picture/picture",
-            "style" : {}
-        }
+        },
+        {
+             "path" : "pages/video/video",
+             "style" : {}
+         }	       
         ,{
             "path" : "pages/zhantiDetails/zhantiDetails",
             "style" : {
 		        "navigationBarTitleText": "详情页"		
 			}
+        }
+        ,{
+            "path" : "pages/imgDetails/imgDetails",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/index/prctureCategory/prctureCategory",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/video/videoDetails/videoDetails",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/video/videoCategory/videoCategory",
+            "style" : {}
         }
     ],
 	"globalStyle": {
@@ -46,20 +55,10 @@
 				"selectedIconPath": "static/icon/home.png",
 				"text": "首页"
 			},{
-				"pagePath": "pages/picture/picture",
-				"iconPath": "static/icon/_img.png",
-				"selectedIconPath": "static/icon/img.png",
-				"text": "横屏"
-			},{
 				"pagePath": "pages/video/video",
 				"iconPath": "static/icon/_videocamera.png",
 				"selectedIconPath": "static/icon/videocamera.png",
 				"text": "视频"
-			},{
-				"pagePath": "pages/search/search",
-				"iconPath": "static/icon/_search.png",
-				"selectedIconPath": "static/icon/search.png",
-				"text": "搜索"
 			},{
 				"pagePath": "pages/mine/mine",
 				"iconPath": "static/icon/_my.png",

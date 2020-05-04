@@ -7,16 +7,13 @@
         
         <view class="content">
             <view v-if="current === 0">
-                <index1></index1>
+                <indexTuijian></indexTuijian>
             </view>
             <view v-if="current === 1">
-                 <index2></index2>
+                 <indexFenlei></indexFenlei>
 			</view>
 			 <view v-if="current === 2">
-					<index3></index3>
-			</view>
-			 <view v-if="current === 3">
-					<index4></index4>
+					<indexZhuanji></indexZhuanji>
 			</view>
          </view>
 	</view>
@@ -24,15 +21,14 @@
 
 <script>
 	import uniSegmentedControl from "@/components/uni-segmented-control/uni-segmented-control.vue"
-	import index1 from './index1.vue'
-	import index2 from './index2.vue'	
-	import index3 from './index3.vue'	
-	import index4 from './index4.vue'	
+	import indexTuijian from "./index-tuijian.vue"
+	import indexFenlei from "./index-fenlei.vue"	
+	import indexZhuanji from "./index-zhuanji.vue"	
 	
 	export default {
 		data() {
 			return {
-				items: ['推荐','分类','最新','专题'],
+				items: ['推荐','分类','专题'],
 				current: 0
 			}
 		},
@@ -46,12 +42,14 @@
 				}
 			}
 		},
+		onShareAppMessage() {
+			
+		},
 		components: {
 			uniSegmentedControl,
-			index1,
-			index2,
-			index3,
-			index4
+			indexTuijian,
+			indexFenlei,
+			indexZhuanji
 		}
 	}
 </script>

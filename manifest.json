@@ -57,7 +57,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "",
+        "appid" : "wx2bb3c56a739f85e6",
         "setting" : {
             "urlCheck" : false
         },
@@ -73,21 +73,22 @@
         "usingComponents" : true
     },
     "h5" : {
-	
-        "devServer": {
-            "port": 8000,
-            "disableHostCheck": true,
-            "proxy": {
-                "/image": {
-                    "target": "http://157.122.54.189:9088",
-                    "changeOrigin": true,
-                    "secure": false
+        "devServer" : {
+            "port" : 8000,
+            "disableHostCheck" : true,
+            "proxy" : {
+                "/image" : {
+                    "target" : "http://157.122.54.189:9088",
+                    "changeOrigin" : true,
+                    "secure" : false
+                },
+                "/videoimg" : {
+                    "target" : "http://157.122.54.189:9088",
+                    "changeOrigin" : true,
+                    "secure" : false
                 }
             }
-        },		
-	
-	
-	
+        },
         "router" : {
             "mode" : "hash"
         }

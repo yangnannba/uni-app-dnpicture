@@ -104,11 +104,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/uni-segmented-control/uni-segmented-control":1,"pages/index/index1":1,"pages/index/index4":1};
+/******/ 		var cssChunks = {"components/uni-segmented-control/uni-segmented-control":1,"pages/index/index-fenlei":1,"pages/index/index-tuijian":1,"pages/index/index-zhuanji":1,"pages/video/video-content":1,"pages/video/video-fenlei":1,"components/uni-icons/uni-icons":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/uni-segmented-control/uni-segmented-control":"components/uni-segmented-control/uni-segmented-control","pages/index/index1":"pages/index/index1","pages/index/index2":"pages/index/index2","pages/index/index3":"pages/index/index3","pages/index/index4":"pages/index/index4"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/uni-segmented-control/uni-segmented-control":"components/uni-segmented-control/uni-segmented-control","pages/index/index-fenlei":"pages/index/index-fenlei","pages/index/index-tuijian":"pages/index/index-tuijian","pages/index/index-zhuanji":"pages/index/index-zhuanji","pages/video/video-content":"pages/video/video-content","pages/video/video-fenlei":"pages/video/video-fenlei","components/toImg":"components/toImg","components/uni-icons/uni-icons":"components/uni-icons/uni-icons","components/myswiper":"components/myswiper"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

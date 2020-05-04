@@ -1,10 +1,13 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/search/search",
     "pages/mine/mine",
     "pages/video/video",
-    "pages/picture/picture"
+    "pages/zhantiDetails/zhantiDetails",
+    "pages/imgDetails/imgDetails",
+    "pages/index/prctureCategory/prctureCategory",
+    "pages/video/videoDetails/videoDetails",
+    "pages/video/videoCategory/videoCategory"
   ],
   "subPackages": [],
   "window": {
@@ -26,22 +29,10 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/picture/picture",
-        "iconPath": "static/icon/_img.png",
-        "selectedIconPath": "static/icon/img.png",
-        "text": "横屏"
-      },
-      {
         "pagePath": "pages/video/video",
         "iconPath": "static/icon/_videocamera.png",
         "selectedIconPath": "static/icon/videocamera.png",
         "text": "视频"
-      },
-      {
-        "pagePath": "pages/search/search",
-        "iconPath": "static/icon/_search.png",
-        "selectedIconPath": "static/icon/search.png",
-        "text": "搜索"
       },
       {
         "pagePath": "pages/mine/mine",
@@ -52,5 +43,5 @@
     ]
   },
   "usingComponents": {},
-  "sitemapLocation": "sitemap42.json"
+  "sitemapLocation": "sitemap67.json"
 }

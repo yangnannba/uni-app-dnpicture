@@ -19,8 +19,10 @@
 		</view>
 		
 		<view class="wallpaper">
-			<view class="item" v-for="item in wallpaper">
-				<image mode="aspectFill" :src="item.img+item.rule.replace('$<Height>',300)"></image>
+			<view class="item" v-for="(item,index) in wallpaper">
+				<to-img :list="wallpaper" :index="index">
+				<image mode="aspectFill" :src="item.img"></image>
+				</to-img>
 			</view>
 			
 		</view>
@@ -28,6 +30,7 @@
 </template>
 
 <script>
+			import toImg from '../../components/toImg.vue'
 	export default {
 		data() {
 			return {
@@ -53,7 +56,18 @@
 				})				
 				
 				uni.request({
+					
+					
+					
+					
+					// #ifdef H5 
 					url:"/image/v1/wallpaper/album/"+this.myid+"/wallpaper",
+					//  #endif
+					
+					// #ifdef MP-WEIXIN 
+					url:"http://157.122.54.189:9088/image/v1/wallpaper/album/"+this.myid+"/wallpaper",
+					//  #endif						
+					
 					data:this.params,
 					success: (result) => {
 
@@ -90,6 +104,9 @@
 			}
 
 			
+		},
+		components:{
+			toImg
 		},
 		onLoad(option) {
 			this.myid =option.id;

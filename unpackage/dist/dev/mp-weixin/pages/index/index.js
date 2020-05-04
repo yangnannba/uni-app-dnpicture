@@ -108,7 +108,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components = {
   "uni-segmented-control": () =>
-    __webpack_require__.e(/*! import() | components/uni-segmented-control/uni-segmented-control */ "components/uni-segmented-control/uni-segmented-control").then(__webpack_require__.bind(null, /*! @/components/uni-segmented-control/uni-segmented-control.vue */ 47))
+    __webpack_require__.e(/*! import() | components/uni-segmented-control/uni-segmented-control */ "components/uni-segmented-control/uni-segmented-control").then(__webpack_require__.bind(null, /*! @/components/uni-segmented-control/uni-segmented-control.vue */ 79))
 }
 var render = function() {
   var _vm = this
@@ -145,11 +145,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uniSegmentedControl = function uniSegmentedControl() {return __webpack_require__.e(/*! import() | components/uni-segmented-control/uni-segmented-control */ "components/uni-segmented-control/uni-segmented-control").then(__webpack_require__.bind(null, /*! @/components/uni-segmented-control/uni-segmented-control.vue */ 47));};var index1 = function index1() {return __webpack_require__.e(/*! import() | pages/index/index1 */ "pages/index/index1").then(__webpack_require__.bind(null, /*! ./index1.vue */ 54));};var index2 = function index2() {return __webpack_require__.e(/*! import() | pages/index/index2 */ "pages/index/index2").then(__webpack_require__.bind(null, /*! ./index2.vue */ 61));};var index3 = function index3() {return __webpack_require__.e(/*! import() | pages/index/index3 */ "pages/index/index3").then(__webpack_require__.bind(null, /*! ./index3.vue */ 66));};var index4 = function index4() {return __webpack_require__.e(/*! import() | pages/index/index4 */ "pages/index/index4").then(__webpack_require__.bind(null, /*! ./index4.vue */ 71));};var _default =
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uniSegmentedControl = function uniSegmentedControl() {return __webpack_require__.e(/*! import() | components/uni-segmented-control/uni-segmented-control */ "components/uni-segmented-control/uni-segmented-control").then(__webpack_require__.bind(null, /*! @/components/uni-segmented-control/uni-segmented-control.vue */ 79));};var indexTuijian = function indexTuijian() {return __webpack_require__.e(/*! import() | pages/index/index-tuijian */ "pages/index/index-tuijian").then(__webpack_require__.bind(null, /*! ./index-tuijian.vue */ 86));};var indexFenlei = function indexFenlei() {return __webpack_require__.e(/*! import() | pages/index/index-fenlei */ "pages/index/index-fenlei").then(__webpack_require__.bind(null, /*! ./index-fenlei.vue */ 93));};var indexZhuanji = function indexZhuanji() {return __webpack_require__.e(/*! import() | pages/index/index-zhuanji */ "pages/index/index-zhuanji").then(__webpack_require__.bind(null, /*! ./index-zhuanji.vue */ 100));};var _default =
 
 
 
@@ -179,7 +175,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 {
   data: function data() {
     return {
-      items: ['推荐', '分类', '最新', '专题'],
+      items: ['推荐', '分类', '专题'],
       current: 0 };
 
   },
@@ -193,12 +189,14 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
       }
     } },
 
+  onShareAppMessage: function onShareAppMessage() {
+
+  },
   components: {
     uniSegmentedControl: uniSegmentedControl,
-    index1: index1,
-    index2: index2,
-    index3: index3,
-    index4: index4 } };exports.default = _default;
+    indexTuijian: indexTuijian,
+    indexFenlei: indexFenlei,
+    indexZhuanji: indexZhuanji } };exports.default = _default;
 
 /***/ }),
 /* 21 */

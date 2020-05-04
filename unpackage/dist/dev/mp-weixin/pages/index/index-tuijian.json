@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "to-img": "/components/toImg"
+  },
+  "component": true
+}
